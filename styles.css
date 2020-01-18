@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    height: 93vh;
+    background-color: rgb(109, 109, 109);
+    display: flex;
+    flex-direction: row-reverse;
+}
+.playerHeader{
+    display: flex;
+    background-color: rgb(29, 29, 29);
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+    font-size: 2.5vh;
+    color: rgb(241, 191, 97);
+    text-align: center;
+    height: 3vh;
+    justify-content: space-evenly;
+}
+.playlist {
+    background-color: rgb(59, 59, 59);
+    width: 49.8vw;
+}
+.player {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(59, 59, 59);
+    width: 49.8vw;
+}
+.playerButtons{
+    display: flex;
+    color: wheat;
+    text-align: center;
+    font-size: 1.5em;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 8vh;
+
+}
+.songImage{
+    display: flex;
+    justify-content: center;
+    width:40vw;
+    height: 40vh;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    align-self: center;
+    border: rgb(78, 78, 78) solid 2px;
+    background-image: url("/img/schwifty-mock-03.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.songInfo{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vh;
+}
+.upperSongInfor{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    font-size: 2.5em;
+    color: wheat;
+}
+.songDuration{
+    display: flex;
+    margin-bottom: 10vh;
+    justify-content: space-around;
+    align-content: center;
+    color: white;
+}
+.fa-play-circle{
+    font-size: 3em;
+}
+.songAndAlbum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.timebar{
+    background-color: rgb(100, 100, 102);
+    height: 10px;
+    width: 60%;
+}
+.playlist{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.quedSong{
+    display: flex;
+    align-items: center;
+    width:98%;
+    height: 16%;
+    margin-top: 0.5vh;
+    border: rgba(100, 100, 100, 0.288) solid 2px;
+    background-color: rgba(134, 134, 134, 0.137);
+    font-size: 1em;
+}
+#musicSong{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#musicAlbum{
+    font-family: cursive;
+}
+.songBox{
+    width: 50vw;
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(241, 191, 97);
+}
+.quedSongImg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/img/i_am_pickle_rick_tshirt_from_rick_and_morty_tv_show_in_India_by_silly_punter.jpg");
+    height: 13vh;
+    width: 13vw;
+    margin-right: 1vw;
+}
+.quedPlayButton{
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    color: wheat;
+    font-size: .6em;
+}
+.quedSongInfo{
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 678px){
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        color:wheat;
+    }
+    main{
+        display: flex;
+        justify-content: space-between;
+        height: 97vh;
+        background-color:rgb(105, 105, 105);
+        flex-wrap: wrap;
+
+    }
+    .playerHeader{
+        position: fixed;
+        background-color: rgb(29, 29, 29);
+        width: 100vw;
+        font-size: 2.5vh;
+
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    .playlist {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(59, 59, 59);
+        width: 100vw;
+        height: 100vh;
+        padding-top: 7vh;
+    }
+    .player {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(59, 59, 59);
+        width: 100vw;
+        margin-top: 7vh;
+        height: 100vh;
+    }
+    .songImage{
+        display: flex;
+        justify-content: center;
+        width:70vw;
+        height: 40vh;
+        margin-bottom: 3vh;
+        margin-top: 3vh;
+        align-self: center;
+        border: rgb(78, 78, 78) solid 2px;
+        background-image: url("/img/schwifty-mock-03.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .songBox{
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: rgb(241, 191, 97);
+    }
+    .quedSongImg{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("/img/i_am_pickle_rick_tshirt_from_rick_and_morty_tv_show_in_India_by_silly_punter.jpg");
+        height: 13vh;
+        width: 20vw;
+    }
+    .upperSongInfor{
+        display: flex;
+        width: 100vw;
+        justify-content: space-evenly;
+        font-size: 1.5em;
+    }
+}
